@@ -1,4 +1,7 @@
--- made by syrnxers
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
 
 local RCUI = Instance.new("ScreenGui")
 local Frame = Instance.new("ImageLabel")
@@ -26,30 +29,28 @@ local status = Instance.new("TextLabel")
 local SellWhenMined = Instance.new("TextButton")
 local TextButton_Roundify_12px_9 = Instance.new("ImageLabel")
 local status_2 = Instance.new("TextLabel")
-local AntiBlacklist = Instance.new("TextButton")
-local TextButton_Roundify_12px_10 = Instance.new("ImageLabel")
 local ClickOnOreToSell = Instance.new("TextButton")
-local TextButton_Roundify_12px_11 = Instance.new("ImageLabel")
+local TextButton_Roundify_12px_10 = Instance.new("ImageLabel")
 local status_3 = Instance.new("TextLabel")
 local AutoDeliverBoxes = Instance.new("TextButton")
-local TextButton_Roundify_12px_12 = Instance.new("ImageLabel")
+local TextButton_Roundify_12px_11 = Instance.new("ImageLabel")
 local status_4 = Instance.new("TextLabel")
 local TpToBaseWhenMined = Instance.new("TextButton")
-local TextButton_Roundify_12px_13 = Instance.new("ImageLabel")
+local TextButton_Roundify_12px_12 = Instance.new("ImageLabel")
 local status_5 = Instance.new("TextLabel")
 local Sell = Instance.new("TextButton")
-local TextButton_Roundify_12px_14 = Instance.new("ImageLabel")
+local TextButton_Roundify_12px_13 = Instance.new("ImageLabel")
 local TpToFurnaceWhenMined = Instance.new("TextButton")
-local TextButton_Roundify_12px_15 = Instance.new("ImageLabel")
+local TextButton_Roundify_12px_14 = Instance.new("ImageLabel")
 local status_6 = Instance.new("TextLabel")
 local DeleteUnfilledBP = Instance.new("TextButton")
-local TextButton_Roundify_12px_16 = Instance.new("ImageLabel")
+local TextButton_Roundify_12px_15 = Instance.new("ImageLabel")
 local SpecialTeleport = Instance.new("TextButton")
-local TextButton_Roundify_12px_17 = Instance.new("ImageLabel")
+local TextButton_Roundify_12px_16 = Instance.new("ImageLabel")
 local SPECIAL_TELEPORTS = Instance.new("ScrollingFrame")
 local UIListLayout_3 = Instance.new("UIListLayout")
 local OreTeleport = Instance.new("TextButton")
-local TextButton_Roundify_12px_18 = Instance.new("ImageLabel")
+local TextButton_Roundify_12px_17 = Instance.new("ImageLabel")
 local ORE_TELEPORTS = Instance.new("ScrollingFrame")
 local UIListLayout_4 = Instance.new("UIListLayout")
 local TextLabel = Instance.new("TextLabel")
@@ -223,6 +224,7 @@ MAIN_FUNCTIONS.BackgroundTransparency = 1.000
 MAIN_FUNCTIONS.BorderSizePixel = 0
 MAIN_FUNCTIONS.Position = UDim2.new(0.347000003, 0, 0.0599999987, 0)
 MAIN_FUNCTIONS.Size = UDim2.new(0.63499999, 0, 0.875999987, 0)
+MAIN_FUNCTIONS.CanvasPosition = Vector2.new(0, 150)
 MAIN_FUNCTIONS.CanvasSize = UDim2.new(0, 0, 5, 0)
 MAIN_FUNCTIONS.ScrollBarThickness = 6
 
@@ -402,36 +404,6 @@ status_2.Text = "OFF"
 status_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 status_2.TextSize = 14.000
 
-AntiBlacklist.Name = "AntiBlacklist"
-AntiBlacklist.Parent = MAIN_FUNCTIONS
-AntiBlacklist.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AntiBlacklist.BackgroundTransparency = 1.000
-AntiBlacklist.BorderSizePixel = 0
-AntiBlacklist.Position = UDim2.new(0, 0, -3.48374165e-08, 0)
-AntiBlacklist.Size = UDim2.new(0.980000019, 0, 0, 30)
-AntiBlacklist.ZIndex = 2
-AntiBlacklist.Font = Enum.Font.Roboto
-AntiBlacklist.Text = "Anti Blacklist"
-AntiBlacklist.TextColor3 = Color3.fromRGB(0, 0, 0)
-AntiBlacklist.TextScaled = true
-AntiBlacklist.TextSize = 14.000
-AntiBlacklist.TextWrapped = true
-
-TextButton_Roundify_12px_10.Name = "TextButton_Roundify_12px"
-TextButton_Roundify_12px_10.Parent = AntiBlacklist
-TextButton_Roundify_12px_10.Active = true
-TextButton_Roundify_12px_10.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_12px_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_12px_10.BackgroundTransparency = 1.000
-TextButton_Roundify_12px_10.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_12px_10.Selectable = true
-TextButton_Roundify_12px_10.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_12px_10.Image = "rbxassetid://3570695787"
-TextButton_Roundify_12px_10.ImageColor3 = Color3.fromRGB(140, 140, 140)
-TextButton_Roundify_12px_10.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_12px_10.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_12px_10.SliceScale = 0.120
-
 ClickOnOreToSell.Name = "ClickOnOreToSell"
 ClickOnOreToSell.Parent = MAIN_FUNCTIONS
 ClickOnOreToSell.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -447,20 +419,20 @@ ClickOnOreToSell.TextScaled = true
 ClickOnOreToSell.TextSize = 14.000
 ClickOnOreToSell.TextWrapped = true
 
-TextButton_Roundify_12px_11.Name = "TextButton_Roundify_12px"
-TextButton_Roundify_12px_11.Parent = ClickOnOreToSell
-TextButton_Roundify_12px_11.Active = true
-TextButton_Roundify_12px_11.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_12px_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_12px_11.BackgroundTransparency = 1.000
-TextButton_Roundify_12px_11.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_12px_11.Selectable = true
-TextButton_Roundify_12px_11.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_12px_11.Image = "rbxassetid://3570695787"
-TextButton_Roundify_12px_11.ImageColor3 = Color3.fromRGB(255, 0, 0)
-TextButton_Roundify_12px_11.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_12px_11.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_12px_11.SliceScale = 0.120
+TextButton_Roundify_12px_10.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_10.Parent = ClickOnOreToSell
+TextButton_Roundify_12px_10.Active = true
+TextButton_Roundify_12px_10.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_10.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_10.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px_10.Selectable = true
+TextButton_Roundify_12px_10.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_10.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_10.ImageColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_Roundify_12px_10.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_10.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_10.SliceScale = 0.120
 
 status_3.Name = "status"
 status_3.Parent = ClickOnOreToSell
@@ -488,20 +460,20 @@ AutoDeliverBoxes.TextScaled = true
 AutoDeliverBoxes.TextSize = 14.000
 AutoDeliverBoxes.TextWrapped = true
 
-TextButton_Roundify_12px_12.Name = "TextButton_Roundify_12px"
-TextButton_Roundify_12px_12.Parent = AutoDeliverBoxes
-TextButton_Roundify_12px_12.Active = true
-TextButton_Roundify_12px_12.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_12px_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_12px_12.BackgroundTransparency = 1.000
-TextButton_Roundify_12px_12.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_12px_12.Selectable = true
-TextButton_Roundify_12px_12.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_12px_12.Image = "rbxassetid://3570695787"
-TextButton_Roundify_12px_12.ImageColor3 = Color3.fromRGB(255, 0, 0)
-TextButton_Roundify_12px_12.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_12px_12.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_12px_12.SliceScale = 0.120
+TextButton_Roundify_12px_11.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_11.Parent = AutoDeliverBoxes
+TextButton_Roundify_12px_11.Active = true
+TextButton_Roundify_12px_11.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_11.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_11.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px_11.Selectable = true
+TextButton_Roundify_12px_11.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_11.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_11.ImageColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_Roundify_12px_11.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_11.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_11.SliceScale = 0.120
 
 status_4.Name = "status"
 status_4.Parent = AutoDeliverBoxes
@@ -529,20 +501,20 @@ TpToBaseWhenMined.TextScaled = true
 TpToBaseWhenMined.TextSize = 14.000
 TpToBaseWhenMined.TextWrapped = true
 
-TextButton_Roundify_12px_13.Name = "TextButton_Roundify_12px"
-TextButton_Roundify_12px_13.Parent = TpToBaseWhenMined
-TextButton_Roundify_12px_13.Active = true
-TextButton_Roundify_12px_13.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_12px_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_12px_13.BackgroundTransparency = 1.000
-TextButton_Roundify_12px_13.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_12px_13.Selectable = true
-TextButton_Roundify_12px_13.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_12px_13.Image = "rbxassetid://3570695787"
-TextButton_Roundify_12px_13.ImageColor3 = Color3.fromRGB(255, 0, 0)
-TextButton_Roundify_12px_13.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_12px_13.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_12px_13.SliceScale = 0.120
+TextButton_Roundify_12px_12.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_12.Parent = TpToBaseWhenMined
+TextButton_Roundify_12px_12.Active = true
+TextButton_Roundify_12px_12.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_12.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_12.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px_12.Selectable = true
+TextButton_Roundify_12px_12.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_12.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_12.ImageColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_Roundify_12px_12.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_12.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_12.SliceScale = 0.120
 
 status_5.Name = "status"
 status_5.Parent = TpToBaseWhenMined
@@ -570,20 +542,20 @@ Sell.TextScaled = true
 Sell.TextSize = 14.000
 Sell.TextWrapped = true
 
-TextButton_Roundify_12px_14.Name = "TextButton_Roundify_12px"
-TextButton_Roundify_12px_14.Parent = Sell
-TextButton_Roundify_12px_14.Active = true
-TextButton_Roundify_12px_14.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_12px_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_12px_14.BackgroundTransparency = 1.000
-TextButton_Roundify_12px_14.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_12px_14.Selectable = true
-TextButton_Roundify_12px_14.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_12px_14.Image = "rbxassetid://3570695787"
-TextButton_Roundify_12px_14.ImageColor3 = Color3.fromRGB(140, 140, 140)
-TextButton_Roundify_12px_14.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_12px_14.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_12px_14.SliceScale = 0.120
+TextButton_Roundify_12px_13.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_13.Parent = Sell
+TextButton_Roundify_12px_13.Active = true
+TextButton_Roundify_12px_13.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_13.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_13.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px_13.Selectable = true
+TextButton_Roundify_12px_13.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_13.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_13.ImageColor3 = Color3.fromRGB(140, 140, 140)
+TextButton_Roundify_12px_13.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_13.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_13.SliceScale = 0.120
 
 TpToFurnaceWhenMined.Name = "TpToFurnaceWhenMined"
 TpToFurnaceWhenMined.Parent = MAIN_FUNCTIONS
@@ -600,20 +572,20 @@ TpToFurnaceWhenMined.TextScaled = true
 TpToFurnaceWhenMined.TextSize = 14.000
 TpToFurnaceWhenMined.TextWrapped = true
 
-TextButton_Roundify_12px_15.Name = "TextButton_Roundify_12px"
-TextButton_Roundify_12px_15.Parent = TpToFurnaceWhenMined
-TextButton_Roundify_12px_15.Active = true
-TextButton_Roundify_12px_15.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_12px_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_12px_15.BackgroundTransparency = 1.000
-TextButton_Roundify_12px_15.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_12px_15.Selectable = true
-TextButton_Roundify_12px_15.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_12px_15.Image = "rbxassetid://3570695787"
-TextButton_Roundify_12px_15.ImageColor3 = Color3.fromRGB(255, 0, 0)
-TextButton_Roundify_12px_15.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_12px_15.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_12px_15.SliceScale = 0.120
+TextButton_Roundify_12px_14.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_14.Parent = TpToFurnaceWhenMined
+TextButton_Roundify_12px_14.Active = true
+TextButton_Roundify_12px_14.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_14.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_14.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px_14.Selectable = true
+TextButton_Roundify_12px_14.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_14.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_14.ImageColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_Roundify_12px_14.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_14.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_14.SliceScale = 0.120
 
 status_6.Name = "status"
 status_6.Parent = TpToFurnaceWhenMined
@@ -641,20 +613,20 @@ DeleteUnfilledBP.TextScaled = true
 DeleteUnfilledBP.TextSize = 14.000
 DeleteUnfilledBP.TextWrapped = true
 
-TextButton_Roundify_12px_16.Name = "TextButton_Roundify_12px"
-TextButton_Roundify_12px_16.Parent = DeleteUnfilledBP
-TextButton_Roundify_12px_16.Active = true
-TextButton_Roundify_12px_16.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_12px_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_12px_16.BackgroundTransparency = 1.000
-TextButton_Roundify_12px_16.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_12px_16.Selectable = true
-TextButton_Roundify_12px_16.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_12px_16.Image = "rbxassetid://3570695787"
-TextButton_Roundify_12px_16.ImageColor3 = Color3.fromRGB(140, 140, 140)
-TextButton_Roundify_12px_16.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_12px_16.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_12px_16.SliceScale = 0.120
+TextButton_Roundify_12px_15.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_15.Parent = DeleteUnfilledBP
+TextButton_Roundify_12px_15.Active = true
+TextButton_Roundify_12px_15.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_15.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_15.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px_15.Selectable = true
+TextButton_Roundify_12px_15.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_15.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_15.ImageColor3 = Color3.fromRGB(140, 140, 140)
+TextButton_Roundify_12px_15.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_15.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_15.SliceScale = 0.120
 
 SpecialTeleport.Name = "SpecialTeleport"
 SpecialTeleport.Parent = Frame
@@ -671,20 +643,20 @@ SpecialTeleport.TextScaled = true
 SpecialTeleport.TextSize = 14.000
 SpecialTeleport.TextWrapped = true
 
-TextButton_Roundify_12px_17.Name = "TextButton_Roundify_12px"
-TextButton_Roundify_12px_17.Parent = SpecialTeleport
-TextButton_Roundify_12px_17.Active = true
-TextButton_Roundify_12px_17.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_12px_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_12px_17.BackgroundTransparency = 1.000
-TextButton_Roundify_12px_17.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_12px_17.Selectable = true
-TextButton_Roundify_12px_17.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_12px_17.Image = "rbxassetid://3570695787"
-TextButton_Roundify_12px_17.ImageColor3 = Color3.fromRGB(39, 39, 39)
-TextButton_Roundify_12px_17.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_12px_17.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_12px_17.SliceScale = 0.120
+TextButton_Roundify_12px_16.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_16.Parent = SpecialTeleport
+TextButton_Roundify_12px_16.Active = true
+TextButton_Roundify_12px_16.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_16.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_16.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px_16.Selectable = true
+TextButton_Roundify_12px_16.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_16.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_16.ImageColor3 = Color3.fromRGB(39, 39, 39)
+TextButton_Roundify_12px_16.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_16.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_16.SliceScale = 0.120
 
 SPECIAL_TELEPORTS.Name = "SPECIAL_TELEPORTS"
 SPECIAL_TELEPORTS.Parent = Frame
@@ -717,20 +689,20 @@ OreTeleport.TextScaled = true
 OreTeleport.TextSize = 14.000
 OreTeleport.TextWrapped = true
 
-TextButton_Roundify_12px_18.Name = "TextButton_Roundify_12px"
-TextButton_Roundify_12px_18.Parent = OreTeleport
-TextButton_Roundify_12px_18.Active = true
-TextButton_Roundify_12px_18.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_12px_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_12px_18.BackgroundTransparency = 1.000
-TextButton_Roundify_12px_18.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_12px_18.Selectable = true
-TextButton_Roundify_12px_18.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_12px_18.Image = "rbxassetid://3570695787"
-TextButton_Roundify_12px_18.ImageColor3 = Color3.fromRGB(39, 39, 39)
-TextButton_Roundify_12px_18.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_12px_18.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_12px_18.SliceScale = 0.120
+TextButton_Roundify_12px_17.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_17.Parent = OreTeleport
+TextButton_Roundify_12px_17.Active = true
+TextButton_Roundify_12px_17.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_17.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_17.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px_17.Selectable = true
+TextButton_Roundify_12px_17.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_17.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_17.ImageColor3 = Color3.fromRGB(39, 39, 39)
+TextButton_Roundify_12px_17.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_17.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_17.SliceScale = 0.120
 
 ORE_TELEPORTS.Name = "ORE_TELEPORTS"
 ORE_TELEPORTS.Parent = Frame
@@ -833,7 +805,7 @@ orename.TextWrapped = true
 
 -- Scripts:
 
-local function XXBKG_fake_script() -- MainFunctions.LocalScript 
+local function YCLP_fake_script() -- MainFunctions.LocalScript 
 	local script = Instance.new('LocalScript', MainFunctions)
 
 	local mafun = script.Parent.Parent.MAIN_FUNCTIONS
@@ -849,8 +821,8 @@ local function XXBKG_fake_script() -- MainFunctions.LocalScript
 	end)
 	
 end
-coroutine.wrap(XXBKG_fake_script)()
-local function STWBHF_fake_script() -- Teleport.LocalScript 
+coroutine.wrap(YCLP_fake_script)()
+local function HJZOJNL_fake_script() -- Teleport.LocalScript 
 	local script = Instance.new('LocalScript', Teleport)
 
 	local mafun = script.Parent.Parent.MAIN_FUNCTIONS
@@ -865,8 +837,8 @@ local function STWBHF_fake_script() -- Teleport.LocalScript
 		ortps.Visible = false
 	end)
 end
-coroutine.wrap(STWBHF_fake_script)()
-local function PEGB_fake_script() -- Close.LocalScript 
+coroutine.wrap(HJZOJNL_fake_script)()
+local function DKJMZZF_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	
@@ -875,8 +847,8 @@ local function PEGB_fake_script() -- Close.LocalScript
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(PEGB_fake_script)()
-local function RWQPLX_fake_script() -- Frame.Drag 
+coroutine.wrap(DKJMZZF_fake_script)()
+local function WZSWC_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -919,8 +891,8 @@ local function RWQPLX_fake_script() -- Frame.Drag
 		end
 	end)
 end
-coroutine.wrap(RWQPLX_fake_script)()
-local function YXRFXHF_fake_script() -- TELEPORTS.load 
+coroutine.wrap(WZSWC_fake_script)()
+local function WLAMZ_fake_script() -- TELEPORTS.load 
 	local script = Instance.new('LocalScript', TELEPORTS)
 
 	local places = workspace.Map.Buildings
@@ -935,8 +907,8 @@ local function YXRFXHF_fake_script() -- TELEPORTS.load
 		
 	end
 end
-coroutine.wrap(YXRFXHF_fake_script)()
-local function GMNTQC_fake_script() -- TELEPORTS.teleport 
+coroutine.wrap(WLAMZ_fake_script)()
+local function IGEMD_fake_script() -- TELEPORTS.teleport 
 	local script = Instance.new('LocalScript', TELEPORTS)
 
 	local places = workspace.Map.Buildings
@@ -954,8 +926,8 @@ local function GMNTQC_fake_script() -- TELEPORTS.teleport
 		end
 	end
 end
-coroutine.wrap(GMNTQC_fake_script)()
-local function CJXXTQ_fake_script() -- FreeBlueprints.LocalScript 
+coroutine.wrap(IGEMD_fake_script)()
+local function ERSM_fake_script() -- FreeBlueprints.LocalScript 
 	local script = Instance.new('LocalScript', FreeBlueprints)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -972,8 +944,8 @@ local function CJXXTQ_fake_script() -- FreeBlueprints.LocalScript
 		
 		end)
 end
-coroutine.wrap(CJXXTQ_fake_script)()
-local function OLSVF_fake_script() -- IslandBridge.LocalScript 
+coroutine.wrap(ERSM_fake_script)()
+local function NMCY_fake_script() -- IslandBridge.LocalScript 
 	local script = Instance.new('LocalScript', IslandBridge)
 
 	
@@ -990,16 +962,16 @@ local function OLSVF_fake_script() -- IslandBridge.LocalScript
 		end)
 	
 end
-coroutine.wrap(OLSVF_fake_script)()
-local function TCUH_fake_script() -- StopRain.LocalScript 
+coroutine.wrap(NMCY_fake_script)()
+local function KWSAFLH_fake_script() -- StopRain.LocalScript 
 	local script = Instance.new('LocalScript', StopRain)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("Workspace").Raining.Value = false
 		end)
 end
-coroutine.wrap(TCUH_fake_script)()
-local function KJOHO_fake_script() -- TpWhenMined.toggle 
+coroutine.wrap(KWSAFLH_fake_script)()
+local function TUQYTAZ_fake_script() -- TpWhenMined.toggle 
 	local script = Instance.new('LocalScript', TpWhenMined)
 
 	local status = script.Parent.status
@@ -1014,24 +986,28 @@ local function KJOHO_fake_script() -- TpWhenMined.toggle
 		end
 	end)
 end
-coroutine.wrap(KJOHO_fake_script)()
-local function AKQXVPX_fake_script() -- TpWhenMined.aaa 
+coroutine.wrap(TUQYTAZ_fake_script)()
+local function XVHGK_fake_script() -- TpWhenMined.aaa 
 	local script = Instance.new('LocalScript', TpWhenMined)
 
 	workspace.Grabable.ChildAdded:Connect(function(child)
 		if script.Parent.status.Text == "ON" then
-		wait(0.7)
+			wait(1)
+			if child:FindFirstChild("Configuration") then
+				if child.Configuration:FindFirstChild("Data") and child.Configuration:FindFirstChild("Data"):FindFirstChild("MatInd") then
 		local player = game.Players.LocalPlayer
 			local part = child
 			part.Part.Anchored = true
 		part.Part.Position = Vector3.new(-423,6.7,-75)
 			wait(0.5)
-			part.Part.Anchored = false
-		end
+					part.Part.Anchored = false
+				end
+				end
+				end
 	end)
 end
-coroutine.wrap(AKQXVPX_fake_script)()
-local function LNDX_fake_script() -- SellWhenMined.toggle 
+coroutine.wrap(XVHGK_fake_script)()
+local function WYTGOZ_fake_script() -- SellWhenMined.toggle 
 	local script = Instance.new('LocalScript', SellWhenMined)
 
 	local status = script.Parent.status
@@ -1046,13 +1022,15 @@ local function LNDX_fake_script() -- SellWhenMined.toggle
 		end
 	end)
 end
-coroutine.wrap(LNDX_fake_script)()
-local function WYITHL_fake_script() -- SellWhenMined.aaa 
+coroutine.wrap(WYTGOZ_fake_script)()
+local function YDBIL_fake_script() -- SellWhenMined.aaa 
 	local script = Instance.new('LocalScript', SellWhenMined)
 
 	workspace.Grabable.ChildAdded:Connect(function(child)
 		if script.Parent.status.Text == "ON" then
-		wait(0.1)
+			wait(1)
+			if child:FindFirstChild("Configuration") then
+				if child.Configuration:FindFirstChild("Data") and child.Configuration:FindFirstChild("Data"):FindFirstChild("MatInd") then
 		local player = game.Players.LocalPlayer
 			local part = child
 			part.Part.Anchored = true
@@ -1064,25 +1042,14 @@ local function WYITHL_fake_script() -- SellWhenMined.aaa
 			wait(0.5)		
 	
 		local Event = game:GetService("Workspace").Map.Sellary.Keeper.IPart.Interact
-		Event:FireServer()
+					Event:FireServer()
+				end
+				end
 		end
 	end)
 end
-coroutine.wrap(WYITHL_fake_script)()
-local function QZHC_fake_script() -- AntiBlacklist.LocalScript 
-	local script = Instance.new('LocalScript', AntiBlacklist)
-
-	
-	script.Parent.MouseButton1Click:Connect(function()
-	
-		for _, part in pairs(workspace.Plots:GetChildren()) do
-			part.Borders:Destroy()
-		end
-	end)
-	
-end
-coroutine.wrap(QZHC_fake_script)()
-local function UQNZBP_fake_script() -- ClickOnOreToSell.toggle 
+coroutine.wrap(YDBIL_fake_script)()
+local function KAME_fake_script() -- ClickOnOreToSell.toggle 
 	local script = Instance.new('LocalScript', ClickOnOreToSell)
 
 	local status = script.Parent.status
@@ -1097,8 +1064,8 @@ local function UQNZBP_fake_script() -- ClickOnOreToSell.toggle
 		end
 	end)
 end
-coroutine.wrap(UQNZBP_fake_script)()
-local function OPOLXRL_fake_script() -- ClickOnOreToSell.ABC 
+coroutine.wrap(KAME_fake_script)()
+local function PNTG_fake_script() -- ClickOnOreToSell.ABC 
 	local script = Instance.new('LocalScript', ClickOnOreToSell)
 
 	local player = game.Players.LocalPlayer
@@ -1128,8 +1095,8 @@ local function OPOLXRL_fake_script() -- ClickOnOreToSell.ABC
 		end
 	end)
 end
-coroutine.wrap(OPOLXRL_fake_script)()
-local function JFNR_fake_script() -- AutoDeliverBoxes.toggle 
+coroutine.wrap(PNTG_fake_script)()
+local function EKXCPSB_fake_script() -- AutoDeliverBoxes.toggle 
 	local script = Instance.new('LocalScript', AutoDeliverBoxes)
 
 	local status = script.Parent.status
@@ -1144,8 +1111,8 @@ local function JFNR_fake_script() -- AutoDeliverBoxes.toggle
 		end
 	end)
 end
-coroutine.wrap(JFNR_fake_script)()
-local function MDMFU_fake_script() -- AutoDeliverBoxes.aaa 
+coroutine.wrap(EKXCPSB_fake_script)()
+local function XBAU_fake_script() -- AutoDeliverBoxes.aaa 
 	local script = Instance.new('LocalScript', AutoDeliverBoxes)
 
 	workspace.Grabable.ChildAdded:Connect(function(child)
@@ -1167,8 +1134,8 @@ local function MDMFU_fake_script() -- AutoDeliverBoxes.aaa
 	
 	
 end
-coroutine.wrap(MDMFU_fake_script)()
-local function BDYJBFE_fake_script() -- TpToBaseWhenMined.toggle 
+coroutine.wrap(XBAU_fake_script)()
+local function CWXG_fake_script() -- TpToBaseWhenMined.toggle 
 	local script = Instance.new('LocalScript', TpToBaseWhenMined)
 
 	local status = script.Parent.status
@@ -1183,13 +1150,16 @@ local function BDYJBFE_fake_script() -- TpToBaseWhenMined.toggle
 		end
 	end)
 end
-coroutine.wrap(BDYJBFE_fake_script)()
-local function TUMUC_fake_script() -- TpToBaseWhenMined.aaa 
+coroutine.wrap(CWXG_fake_script)()
+local function PKQXR_fake_script() -- TpToBaseWhenMined.aaa 
 	local script = Instance.new('LocalScript', TpToBaseWhenMined)
 
 	workspace.Grabable.ChildAdded:Connect(function(child)
 		if script.Parent.status.Text == "ON" then
-		wait(0.7)
+			
+			wait(1)
+			if child:FindFirstChild("Configuration") then
+				if child.Configuration:FindFirstChild("Data") and child.Configuration:FindFirstChild("Data"):FindFirstChild("MatInd") then
 		local player = game.Players.LocalPlayer
 			local val = tostring(player.Values.Plot.Value)
 			local base = workspace.Plots[val]
@@ -1197,12 +1167,14 @@ local function TUMUC_fake_script() -- TpToBaseWhenMined.aaa
 			part.Part.Anchored = true
 		part.Part.Position = base.Base.Position + Vector3.new(0,4,0)
 			wait(0.5)
-			part.Part.Anchored = false
+					part.Part.Anchored = false
+				end
+			end
 		end
 	end)
 end
-coroutine.wrap(TUMUC_fake_script)()
-local function GYCUX_fake_script() -- Sell.LocalScript 
+coroutine.wrap(PKQXR_fake_script)()
+local function RXMLD_fake_script() -- Sell.LocalScript 
 	local script = Instance.new('LocalScript', Sell)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1210,8 +1182,8 @@ local function GYCUX_fake_script() -- Sell.LocalScript
 		Event:FireServer()
 		end)
 end
-coroutine.wrap(GYCUX_fake_script)()
-local function OIIFM_fake_script() -- TpToFurnaceWhenMined.toggle 
+coroutine.wrap(RXMLD_fake_script)()
+local function EREKP_fake_script() -- TpToFurnaceWhenMined.toggle 
 	local script = Instance.new('LocalScript', TpToFurnaceWhenMined)
 
 	local status = script.Parent.status
@@ -1226,13 +1198,15 @@ local function OIIFM_fake_script() -- TpToFurnaceWhenMined.toggle
 		end
 	end)
 end
-coroutine.wrap(OIIFM_fake_script)()
-local function NQTAII_fake_script() -- TpToFurnaceWhenMined.aaa 
+coroutine.wrap(EREKP_fake_script)()
+local function RRYUPOW_fake_script() -- TpToFurnaceWhenMined.aaa 
 	local script = Instance.new('LocalScript', TpToFurnaceWhenMined)
 
 	workspace.Grabable.ChildAdded:Connect(function(child)
 		if script.Parent.status.Text == "ON" then
-		wait(0.7)
+			wait(1)
+			if child:FindFirstChild("Configuration") then
+				if child.Configuration:FindFirstChild("Data") and child.Configuration:FindFirstChild("Data"):FindFirstChild("MatInd") then
 		local player = game.Players.LocalPlayer
 			local val = tostring(player.Values.Plot.Value)
 			local base = workspace.Plots[val]
@@ -1252,13 +1226,15 @@ local function NQTAII_fake_script() -- TpToFurnaceWhenMined.aaa
 				part.Part.Anchored = true
 				part.Part.Position = furnace.Hitbox.Position
 				wait(0.5)
-				part.Part.Anchored = false
+						part.Part.Anchored = false
+					end
+					end
 			end
 		end
 	end)
 end
-coroutine.wrap(NQTAII_fake_script)()
-local function LSSXQZS_fake_script() -- DeleteUnfilledBP.LocalScript 
+coroutine.wrap(RRYUPOW_fake_script)()
+local function PJQR_fake_script() -- DeleteUnfilledBP.LocalScript 
 	local script = Instance.new('LocalScript', DeleteUnfilledBP)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1279,8 +1255,8 @@ local function LSSXQZS_fake_script() -- DeleteUnfilledBP.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LSSXQZS_fake_script)()
-local function JLDQX_fake_script() -- SpecialTeleport.LocalScript 
+coroutine.wrap(PJQR_fake_script)()
+local function LQDHC_fake_script() -- SpecialTeleport.LocalScript 
 	local script = Instance.new('LocalScript', SpecialTeleport)
 
 	local mafun = script.Parent.Parent.MAIN_FUNCTIONS
@@ -1295,8 +1271,8 @@ local function JLDQX_fake_script() -- SpecialTeleport.LocalScript
 		ortps.Visible = false
 	end)
 end
-coroutine.wrap(JLDQX_fake_script)()
-local function ORJSPY_fake_script() -- SPECIAL_TELEPORTS.load 
+coroutine.wrap(LQDHC_fake_script)()
+local function MAGN_fake_script() -- SPECIAL_TELEPORTS.load 
 	local script = Instance.new('LocalScript', SPECIAL_TELEPORTS)
 
 	
@@ -1311,8 +1287,8 @@ local function ORJSPY_fake_script() -- SPECIAL_TELEPORTS.load
 		
 	end
 end
-coroutine.wrap(ORJSPY_fake_script)()
-local function JPUK_fake_script() -- SPECIAL_TELEPORTS.teleport 
+coroutine.wrap(MAGN_fake_script)()
+local function COZABWM_fake_script() -- SPECIAL_TELEPORTS.teleport 
 	local script = Instance.new('LocalScript', SPECIAL_TELEPORTS)
 
 	local places = game:GetService("Workspace").MouseIgnore.TeleportPoints
@@ -1330,8 +1306,8 @@ local function JPUK_fake_script() -- SPECIAL_TELEPORTS.teleport
 		end
 	end
 end
-coroutine.wrap(JPUK_fake_script)()
-local function WRYEY_fake_script() -- OreTeleport.LocalScript 
+coroutine.wrap(COZABWM_fake_script)()
+local function STEB_fake_script() -- OreTeleport.LocalScript 
 	local script = Instance.new('LocalScript', OreTeleport)
 
 	local mafun = script.Parent.Parent.MAIN_FUNCTIONS
@@ -1346,8 +1322,8 @@ local function WRYEY_fake_script() -- OreTeleport.LocalScript
 		ortps.Visible = true
 	end)
 end
-coroutine.wrap(WRYEY_fake_script)()
-local function NDNGK_fake_script() -- ORE_TELEPORTS.load 
+coroutine.wrap(STEB_fake_script)()
+local function OEHE_fake_script() -- ORE_TELEPORTS.load 
 	local script = Instance.new('LocalScript', ORE_TELEPORTS)
 
 	local notsafe = {"Amethyst", "OddStone", "OddTree", "Ruby", "Sapphire", "Opal"}
@@ -1379,8 +1355,8 @@ local function NDNGK_fake_script() -- ORE_TELEPORTS.load
 		end
 	end
 end
-coroutine.wrap(NDNGK_fake_script)()
-local function JVGQD_fake_script() -- ORE_TELEPORTS.teleport 
+coroutine.wrap(OEHE_fake_script)()
+local function GIQXYE_fake_script() -- ORE_TELEPORTS.teleport 
 	local script = Instance.new('LocalScript', ORE_TELEPORTS)
 
 	local places = workspace.WorldSpawn
@@ -1422,8 +1398,8 @@ local function JVGQD_fake_script() -- ORE_TELEPORTS.teleport
 		end
 	end
 end
-coroutine.wrap(JVGQD_fake_script)()
-local function RZBAGOJ_fake_script() -- YES.LocalScript 
+coroutine.wrap(GIQXYE_fake_script)()
+local function GVSCUQ_fake_script() -- YES.LocalScript 
 	local script = Instance.new('LocalScript', YES)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1446,22 +1422,23 @@ local function RZBAGOJ_fake_script() -- YES.LocalScript
 		
 	end)
 end
-coroutine.wrap(RZBAGOJ_fake_script)()
-local function QYKI_fake_script() -- NO.LocalScript 
+coroutine.wrap(GVSCUQ_fake_script)()
+local function DGZYYTW_fake_script() -- NO.LocalScript 
 	local script = Instance.new('LocalScript', NO)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(QYKI_fake_script)()
-local function VGCUWE_fake_script() -- RARE_ORE_NOTIFICATION.lookforrareores 
+coroutine.wrap(DGZYYTW_fake_script)()
+local function FWXQ_fake_script() -- RARE_ORE_NOTIFICATION.lookforrareores 
 	local script = Instance.new('LocalScript', RARE_ORE_NOTIFICATION)
 
 	
 	wait(5)
 	
 	workspace.WorldSpawn.ChildAdded:Connect(function(child)
+		wait(2)
 		if child:FindFirstChild("RockString") then
 		if child.RockString.Value == "Dirt" or child.RockString.Value == "Grass" or child.RockString.Value == "Morganite" or child.RockString.Value == "Pure Crystal" or child.RockString.Value == "Stormite" or child.RockString.Value == "Dumortierite" or child.RockString.Value == "Astanite" then
 			
@@ -1472,4 +1449,4 @@ local function VGCUWE_fake_script() -- RARE_ORE_NOTIFICATION.lookforrareores
 			end
 	end)
 end
-coroutine.wrap(VGCUWE_fake_script)()
+coroutine.wrap(FWXQ_fake_script)()
